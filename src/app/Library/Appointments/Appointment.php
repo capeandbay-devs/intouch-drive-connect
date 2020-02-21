@@ -2,6 +2,7 @@
 
 namespace CapeAndBay\InTouch\Library\Appointments;
 
+use Illuminate\Support\Facades\Log;
 use CapeAndBay\InTouch\Library\Feature;
 
 class Appointment extends Feature
@@ -36,6 +37,8 @@ class Appointment extends Feature
 
             $header = ['clubuuid: '.$club_uuid];
             $response = $this->intouch_client->post($this->appointments_url(), $args, $header);
+
+            Log::info($response);
 
             if($response)
             {
