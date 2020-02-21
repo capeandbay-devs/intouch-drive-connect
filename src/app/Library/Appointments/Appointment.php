@@ -42,13 +42,7 @@ class Appointment extends Feature
 
             if($response)
             {
-                if(array_key_exists('_embedded', $response))
-                {
-                    if(array_key_exists('appointments', $response['_embedded']))
-                    {
-                        $results = $response['_embedded']['appointments'];
-                    }
-                }
+                $results = $response;
             }
         }
         catch(\Exception $e)
