@@ -18,7 +18,7 @@ class LeadSources extends Feature
         return $this->intouch_client->public_url().$this->url;
     }
 
-    public function getLeads($club_uuid)
+    public function getLeadSources($club_uuid)
     {
         $results = [];
 

@@ -59,6 +59,17 @@ class InTouchService
 
         $url = $endpoint;
 
+        $header = ['Authorization: Bearer '.$this->token];
+        if(!empty($headers))
+        {
+            foreach($headers as $h)
+            {
+                $header[] = $h;
+            }
+        }
+
+        $headers = $header;
+
         if(!empty($args))
         {
             if(!empty($headers))
