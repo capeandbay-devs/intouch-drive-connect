@@ -1,0 +1,45 @@
+{
+    "name": "capeandbay/intouch-drive-connect",
+    "homepage": "https://capeandbay.com",
+    "description": "InTouch Drive API Interface for Laravel",
+    "keywords": ["laravel", "laravel 5", "intouch", "drive", "capeandbay"],
+    "type":"library",
+    "license":"MIT",
+    "authors":[
+        {
+            "name":"Cape & Bay",
+            "homepage":"http://capeandbay.com"
+        },
+        {
+            "name":"Angel Gonzalez",
+            "email":"angel@capeandbay.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "illuminate/support": "~5.1|~6.0",
+        "ixudra/curl": "^6.17"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0|~5.0"
+    },
+    "suggest": {
+        "laravel/framework": "To test the Laravel bindings"
+    },
+    "autoload": {
+        "psr-4": { "CapeAndBay\\InTouch\\": "src/" }
+    },
+    "extra": {
+        "laravel": {
+            "branch-alias": {
+                "dev-master": "0.1.0-dev"
+            },
+            "providers": [
+                "CapeAndBay\\InTouch\\InTouchServiceProvider"
+            ],
+            "aliases": {
+                "InTouch": "CapeAndBay\\InTouch\\Facades\\InTouch"
+            }
+        }
+    }
+}
