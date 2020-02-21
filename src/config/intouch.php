@@ -11,6 +11,5 @@ return [
         'leads' => \CapeAndBay\InTouch\Library\Leads\Leads::class,
         'leadsources' => \CapeAndBay\InTouch\Library\Leads\LeadSources::class,
         'staff' => \CapeAndBay\InTouch\Library\People\Staff::class,
-
     ]
 ];
