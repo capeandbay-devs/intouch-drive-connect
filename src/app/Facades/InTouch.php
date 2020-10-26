@@ -1,6 +1,6 @@
 <?php
 
-namespace CapeAndBay\InTouch\Facades;
+namespace CapeAndBay\InTouch\app\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

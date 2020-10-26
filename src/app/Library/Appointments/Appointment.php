@@ -1,6 +1,6 @@
 <?php
 
-namespace CapeAndBay\InTouch\Library\Appointments;
+namespace CapeAndBay\InTouch\app\Library\Appointments;
 
 use Illuminate\Support\Facades\Log;
 use CapeAndBay\InTouch\Library\Feature;

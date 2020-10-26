@@ -1,6 +1,6 @@
 <?php
 
-namespace CapeAndBay\InTouch\Services;
+namespace CapeAndBay\InTouch\app\Services;
 
 class LibraryService
 {

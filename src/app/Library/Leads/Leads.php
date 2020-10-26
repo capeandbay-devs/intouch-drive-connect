@@ -1,6 +1,6 @@
 <?php
 
-namespace CapeAndBay\InTouch\Library\Leads;
+namespace CapeAndBay\InTouch\app\Library\Leads;
 
 use CapeAndBay\InTouch\Library\Feature;
 

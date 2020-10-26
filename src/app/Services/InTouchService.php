@@ -1,6 +1,6 @@
 <?php
 
-namespace CapeAndBay\InTouch\Services;
+namespace CapeAndBay\InTouch\app\Services;
 
 use Ixudra\Curl\Facades\Curl;
 use Illuminate\Support\Facades\Log;

@@ -1,6 +1,6 @@
 <?php
 
-namespace CapeAndBay\InTouch\Library\People;
+namespace CapeAndBay\InTouch\app\Library\People;
 
 use CapeAndBay\InTouch\Library\Feature;
 
