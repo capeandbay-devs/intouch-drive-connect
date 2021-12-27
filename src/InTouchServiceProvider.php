@@ -78,9 +78,9 @@ class InTouchServiceProvider extends ServiceProvider
 
         $timestamp = date('Y_m_d_His', time());
 
-        $stub = __DIR__.'/migrations/create_intouch_tables.php';
+        $stub = __DIR__.'/database/migrations/create_intouch_tables.php';
 
-        $target = $this->app->databasePath().'/database/migrations/'.$timestamp.'_create_bouncer_tables.php';
+        $target = $this->app->databasePath().'/migrations/'.$timestamp.'_create_intouch_tables.php';
 
         $this->publishes([$stub => $target], 'intouch.migrations');
     }
