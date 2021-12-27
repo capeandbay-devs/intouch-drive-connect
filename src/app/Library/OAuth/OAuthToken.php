@@ -16,12 +16,12 @@ class OAuthToken extends Feature
 
     public function oauth_token_url()
     {
-        return $this->intouch_client->public_url().$this->url;
+        return "https://login.intouchfollowup.com{$this->url}";
     }
 
     public function getNewToken()
     {
-        $results = false;
+        $results = ['success' => false, 'error' => 'Could not connect to InTouch'];
 
         try
         {
@@ -39,13 +39,13 @@ class OAuthToken extends Feature
 
                 if($response)
                 {
-                    $results = $response;
+                    $results = ['success' => true, 'token' => $response];
                 }
             }
         }
         catch(\Exception $e)
         {
-            $results = $e->getMessage();
+            $results['error'] = $e->getMessage();
         }
 
 
