@@ -2,7 +2,7 @@
 
 namespace CapeAndBay\InTouch;
 
-use CapeAndBay\InTouch\Services\LibraryService;
+use CapeAndBay\InTouch\app\Services\LibraryService;
 
 class InTouch
 {

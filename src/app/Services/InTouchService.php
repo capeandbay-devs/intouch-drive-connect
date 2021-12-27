@@ -33,12 +33,19 @@ class InTouchService
             {
                 $header[] = $h;
             }
-        }
 
-        $response = Curl::to($url)
-            ->withHeaders($header)
-            ->asJson(true)
-            ->get();
+            $response = Curl::to($url)
+                ->withHeaders($header)
+                ->asJson(true)
+                ->get();
+        }
+        else
+        {
+            $response = Curl::to($url)
+                //->withHeaders($header)
+                ->asJson(true)
+                ->get();
+        }
 
         if($response)
         {

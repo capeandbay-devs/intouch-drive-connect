@@ -3,7 +3,7 @@
 namespace CapeAndBay\InTouch\app\Library\Appointments;
 
 use Illuminate\Support\Facades\Log;
-use CapeAndBay\InTouch\Library\Feature;
+use CapeAndBay\InTouch\app\Library\Feature;
 
 class Appointment extends Feature
 {
