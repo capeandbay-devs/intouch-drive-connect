@@ -1,12 +1,10 @@
 <?php
 
-use Silber\Bouncer\Database\Models;
-
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateBouncerTables extends Migration
+class CreateIntouchTables extends Migration
 {
     /**
      * Run the migrations.
