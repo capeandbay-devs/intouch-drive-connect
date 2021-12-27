@@ -16,6 +16,7 @@ class CreateIntouchTables extends Migration
         Schema::create('intouch_datatype_details', function (Blueprint $table) {
             $table->uuid('id')->unique()->primary();
 
+            $table->uuid('client_uuid')->nullable();
             $table->string('club_id');
             $table->string('detail_name');
             $table->uuid('intouch_detail_uuid')->nullable();
