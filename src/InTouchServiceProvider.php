@@ -3,7 +3,7 @@
 namespace CapeAndBay\InTouch;
 
 use Illuminate\Support\ServiceProvider;
-use CapeAndBay\InTouch\Services\LibraryService;
+use CapeAndBay\InTouch\app\Services\LibraryService;
 
 class InTouchServiceProvider extends ServiceProvider
 {

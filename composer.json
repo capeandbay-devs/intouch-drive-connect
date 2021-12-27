@@ -40,7 +40,7 @@
                 "CapeAndBay\\InTouch\\InTouchServiceProvider"
             ],
             "aliases": {
-                "InTouch": "CapeAndBay\\InTouch\\Facades\\InTouch"
+                "InTouch": "CapeAndBay\\InTouch\\app\\Facades\\InTouch"
             }
         }
     }
