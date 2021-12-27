@@ -7,7 +7,7 @@ use CapeAndBay\InTouch\Services\LibraryService;
 
 class InTouchServiceProvider extends ServiceProvider
 {
-    const VERSION = '0.1.0';
+    const VERSION = '0.2.0';
 
     /**
      * Indicates if loading of the provider is deferred.
@@ -25,6 +25,11 @@ class InTouchServiceProvider extends ServiceProvider
     {
         $this->loadConfigs();
         $this->publishFiles();
+
+        if ($this->app->runningInConsole()) {
+            //$this->publishMiddleware();
+            $this->publishMigrations();
+        }
     }
 
     /**
@@ -58,5 +63,25 @@ class InTouchServiceProvider extends ServiceProvider
         // register all possible publish commands and assign tags to each
         $this->publishes($capeandbay_config_files, 'config');
         $this->publishes($minimum, 'minimum');
+    }
+
+    /**
+     * Publish the package's migrations.
+     *
+     * @return void
+     */
+    protected function publishMigrations()
+    {
+        if (class_exists('CreateIntouchTables')) {
+            return;
+        }
+
+        $timestamp = date('Y_m_d_His', time());
+
+        $stub = __DIR__.'/migrations/create_intouch_tables.php';
+
+        $target = $this->app->databasePath().'/database/migrations/'.$timestamp.'_create_bouncer_tables.php';
+
+        $this->publishes([$stub => $target], 'intouch.migrations');
     }
 }

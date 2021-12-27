@@ -1,16 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="bc965f32-f984-44e3-85cc-9a283ccf8a33" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/app/Facades/InTouch.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Facades/InTouch.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Library/Appointments/Appointment.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Library/Appointments/Appointment.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Library/Feature.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Library/Feature.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Library/Leads/LeadSources.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Library/Leads/LeadSources.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Library/Leads/Leads.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Library/Leads/Leads.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Library/People/Staff.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Library/People/Staff.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Services/InTouchService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Services/InTouchService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/Services/LibraryService.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Services/LibraryService.php" afterDir="false" />
-    </list>
+    <list default="true" id="bc965f32-f984-44e3-85cc-9a283ccf8a33" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +36,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603751693665</updated>
-      <workItem from="1603751694998" duration="151000" />
+      <workItem from="1603751694998" duration="295000" />
     </task>
     <servers />
   </component>
