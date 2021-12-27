@@ -7,9 +7,9 @@ return [
         'token' => env('INTOUCH_AUTH_TOKEN',''),
     ],
     'class_maps' => [
-        'appointments' => \CapeAndBay\InTouch\Library\Appointments\Appointment::class,
-        'leads' => \CapeAndBay\InTouch\Library\Leads\Leads::class,
-        'leadsources' => \CapeAndBay\InTouch\Library\Leads\LeadSources::class,
-        'staff' => \CapeAndBay\InTouch\Library\People\Staff::class,
+        'appointments' => \CapeAndBay\InTouch\app\Library\Appointments\Appointment::class,
+        'leads' => \CapeAndBay\InTouch\app\Library\Leads\Leads::class,
+        'leadsources' => \CapeAndBay\InTouch\app\Library\Leads\LeadSources::class,
+        'staff' => \CapeAndBay\InTouch\app\Library\People\Staff::class,
     ]
 ];
