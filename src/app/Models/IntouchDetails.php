@@ -27,6 +27,8 @@ class IntouchDetails extends Model
      */
     public $incrementing = false;
 
+    protected $table = 'intouch_datatype_details';
+
 
     /**
      * The attributes that are mass assignable.
