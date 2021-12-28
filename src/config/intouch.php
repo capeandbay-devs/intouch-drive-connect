@@ -11,5 +11,10 @@ return [
         'leads' => \CapeAndBay\InTouch\app\Library\Leads\Leads::class,
         'leadsources' => \CapeAndBay\InTouch\app\Library\Leads\LeadSources::class,
         'staff' => \CapeAndBay\InTouch\app\Library\People\Staff::class,
+    ],
+    'detail_names' => [
+        'clubs' => 'clubUUID',
+        'leadsources' => 'LeadSourceUUID',
+        'staff' => 'LeadOwnerUUID'
     ]
 ];
