@@ -24,7 +24,7 @@ class LeadSources extends Feature
 
         try
         {
-            $header = ['clubuuid: '.$club_uuid, 'Authorization: Bearer '.$token];
+            $header = ["Authorization:Bearer $token", "clubuuid:$club_uuid"];
             $response = $this->intouch_client->get($this->leadsources_url(), $header);
 
             if($response)

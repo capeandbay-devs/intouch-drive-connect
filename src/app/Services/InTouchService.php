@@ -29,13 +29,8 @@ class InTouchService
         $header = ['Authorization: Bearer '.$this->token];
         if(!empty($headers))
         {
-            foreach($headers as $h)
-            {
-                $header[] = $h;
-            }
-
             $response = Curl::to($url)
-                ->withHeaders($header)
+                ->withHeaders($headers)
                 ->asJson(true)
                 ->get();
         }
