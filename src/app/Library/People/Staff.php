@@ -2,7 +2,7 @@
 
 namespace CapeAndBay\InTouch\app\Library\People;
 
-use CapeAndBay\InTouch\Library\Feature;
+use CapeAndBay\InTouch\app\Library\Feature;
 
 class Staff extends Feature
 {
@@ -18,13 +18,13 @@ class Staff extends Feature
         return $this->intouch_client->public_url().$this->url;
     }
 
-    public function getStaff($club_uuid)
+    public function getStaff($club_uuid, $token)
     {
         $results = [];
 
         try
         {
-            $header = ['clubuuid: '.$club_uuid];
+            $header = ["Authorization:Bearer $token", "clubuuid:$club_uuid"];
             $response = $this->intouch_client->get($this->staff_url(), $header);
 
             if($response)
