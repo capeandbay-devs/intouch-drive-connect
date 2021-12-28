@@ -31,7 +31,7 @@ class OAuthToken extends Feature
             if((!is_null($client_id)) && (!is_null($client_secret)))
             {
                 $request_url = $this->oauth_token_url().
-                    "?grant_type=client_credentials&client_id={$client_id}&client_secret= {$client_secret}";
+                    "?grant_type=client_credentials&client_id={$client_id}&client_secret={$client_secret}";
 
                 $response = $this->intouch_client->get($request_url);
 
