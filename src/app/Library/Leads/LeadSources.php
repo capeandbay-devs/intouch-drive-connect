@@ -2,7 +2,7 @@
 
 namespace CapeAndBay\InTouch\app\Library\Leads;
 
-use CapeAndBay\InTouch\Library\Feature;
+use CapeAndBay\InTouch\app\Library\Feature;
 
 class LeadSources extends Feature
 {
@@ -18,13 +18,13 @@ class LeadSources extends Feature
         return $this->intouch_client->public_url().$this->url;
     }
 
-    public function getLeadSources($club_uuid)
+    public function getLeadSources($club_uuid, $token)
     {
         $results = [];
 
         try
         {
-            $header = ['clubuuid: '.$club_uuid];
+            $header = ['clubuuid: '.$club_uuid, 'Authorization: Bearer '.$token];
             $response = $this->intouch_client->get($this->leadsources_url(), $header);
 
             if($response)
