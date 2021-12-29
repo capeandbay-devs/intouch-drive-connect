@@ -2,7 +2,7 @@
 
 namespace CapeAndBay\InTouch\app\Library\Leads;
 
-use CapeAndBay\InTouch\Library\Feature;
+use CapeAndBay\InTouch\app\Library\Feature;
 
 class Leads extends Feature
 {
@@ -18,7 +18,7 @@ class Leads extends Feature
         return $this->intouch_client->public_url().$this->url;
     }
 
-    public function postLead($club_uuid, $data = [])
+    public function postLead($club_uuid, $token, $data = [])
     {
         $results = false;
 
@@ -45,7 +45,7 @@ class Leads extends Feature
                 ]
             ];
 
-            $header = ['clubuuid: '.$club_uuid];
+            $header = ["Authorization:Bearer $token", "clubuuid:$club_uuid"];
             $response = $this->intouch_client->post($this->leads_url(), $args, $header);
 
             if($response)
